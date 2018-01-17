@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background: red;
+            padding: 10px;
+            border: 10px solid #000000;
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*left:300px;*/
+        }
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+</head>
+<body>
+<div class="box"></div>
+<script>
+    $(function () {
+        let box=$('.box')
+       console.log( box.innerWidth());
+        console.log( box.width());
+        console.log( box.outerWidth());
+        console.log( box.offset().top);
+
+    })
+</script>
+</body>
+</html>
